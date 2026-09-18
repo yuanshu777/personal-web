@@ -1,12 +1,13 @@
 # Signal & Structure — personal site design prototype
 
-Static, responsive Bento portfolio. Main language: Chinese; English is used for secondary labels. All personal biography, viewpoints and project content are clearly marked as placeholders or sample copy. No real social profiles are linked yet.
+Static, responsive Bento portfolio in the selected green research style. English is the default; the header offers English / Chinese switching across every page. A visitor's explicit language choice is saved only on their device. Switching language preserves the current page and probability-demo progress. All personal biography, viewpoints and project content remain marked as placeholders or sample copy. No real social profiles are linked yet.
 
 ## Structure
 
 - `dist/index.html`: document shell and social-link placeholder dialog
 - `dist/styles.css`: dark green / acid green design tokens and responsive layouts
-- `dist/themes.css`: three complete design directions and the floating comparison switcher; choice is stored only on the current device
+- `dist/localization.js`: bilingual text and accessible-label translations; English-first language preference
+- `dist/language.css`: language switcher and responsive refinements for bilingual copy
 - `dist/app.js`: homepage, background, strengths, current thinking, philosophy, quantitative research, AI lab; hash-based navigation
 - `preview.mjs`: local-only static preview server on `127.0.0.1:4173`
 

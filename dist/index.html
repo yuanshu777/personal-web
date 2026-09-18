@@ -1,28 +1,28 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10130f">
-  <meta name="description" content="一个关于逻辑、数学、统计与好奇心的个人空间。设计预览，个人内容待填写。">
-  <title>你的名字 — Signal & Structure</title>
+  <meta name="description" content="A personal space for logic, mathematics, statistics and curiosity. Design preview; personal content coming soon.">
+  <title>Your Name — Signal & Structure</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310130f'/%3E%3Cpath d='M9 8h15L12 24h12M7 16h18' fill='none' stroke='%23c6f38a' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="/themes.css">
+  <link rel="stylesheet" href="/language.css">
+  <script src="/localization.js" defer></script>
   <script src="/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到内容</a>
   <div class="site-shell">
     <header class="site-header">
-      <a class="identity" href="#/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">∑</span><span>YOUR NAME<span class="identity-sub">A PERSONAL SPACE</span></span></a>
+      <a class="identity" href="#/" aria-label="返回首页"><span class="brand-mark" aria-hidden="true">∑</span><span><span class="identity-name">YOUR NAME</span><span class="identity-sub">A PERSONAL SPACE</span></span></a>
       <nav aria-label="主导航"><a href="#/" data-nav="home">概览</a><a href="#/thoughts" data-nav="thoughts">思考</a><a href="#/lab" data-nav="lab">AI 实验</a></nav>
-      <span class="draft-label">设计预览 <span>01</span></span>
+      <div class="language-switcher" role="group" aria-label="Language"><button type="button" data-language="en" lang="en" aria-label="Switch to English" aria-pressed="true">EN</button><button type="button" data-language="zh" lang="zh-CN" aria-label="切换到中文" aria-pressed="false">中文</button></div>
     </header>
     <main id="main" tabindex="-1"></main>
     <footer><span class="footer-motto">STAY CURIOUS. THINK CLEARLY.</span><span>个人内容待填写 <span class="footer-separator">/</span> © <span id="year"></span> YOUR NAME</span><a href="#/">回到概览 ↑</a></footer>
   </div>
-  <aside class="design-switcher" aria-label="切换设计风格"><span class="switcher-label">设计对比</span><div class="design-options"><button data-theme-choice="research" aria-pressed="true"><span class="theme-number">01</span><span>研究感</span></button><button data-theme-choice="minimal" aria-pressed="false"><span class="theme-number">02</span><span>极简</span></button><button data-theme-choice="future" aria-pressed="false"><span class="theme-number">03</span><span>前沿</span></button></div><span class="theme-description" aria-live="polite">冷静 · 精确 · 好奇</span></aside>
   <dialog id="link-dialog" aria-labelledby="link-title"><form method="dialog"><button class="dialog-close" aria-label="关闭">×</button></form><span class="eyebrow">LET’S CONNECT</span><h2 id="link-title">社交链接</h2><p>这里已为你的个人主页留好位置。下一步填入真实链接后，就可以直接访问。</p><span class="small-tag">链接待填写</span></dialog>
 </body>
 </html>
