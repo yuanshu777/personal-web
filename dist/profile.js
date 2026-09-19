@@ -11,7 +11,7 @@ const profile = {
   questionCaption: copy('从市场微观结构，到多智能体系统。', 'From market microstructure to interacting agents.'),
   questionStatus: copy('开放问题', 'Open question'),
   backgroundCaption: copy('从多伦多的统计学，到 Harvard 的数据科学。', 'Statistics at Toronto. Data science at Harvard.'),
-  philosophyCaption: copy('第一性原理、人的行为，以及更大的问题。', 'First principles, human behavior, and bigger questions.'),
+  philosophyCaption: copy('从身体经验，到规则、主体与自由。进入完整的思想旅程。', 'From lived experience to rules, selfhood, and freedom. Enter the full inquiry.'),
   labCaption: copy('财报预测、医学基础模型与市场模拟。', 'Financial reports, medical foundation models, and market simulation.'),
   quantCaption: copy('寻找机制，也检验可交易性。', 'Understand the mechanism. Test the trade.'),
   labIntro: copy('我的项目与研究兴趣跨越金融预测和医学机器学习。这里先记录研究问题与方法；完整结果、代码和演示会逐项补充。', 'My projects and research interests span financial prediction and medical machine learning. These notes introduce the questions and approaches; full results, code, and demos will follow.'),
@@ -79,6 +79,7 @@ const profilePages = {
   },
   philosophy: {
     number: '05', eyebrow: 'BEYOND THE EQUATIONS', title: '思考的底层。',
+    longform: {title: copy('身在世界，追问世界。', 'Within the world.'), text: copy('从最初的身体经验出发，沿着九幕、二十个节点，走过规则、完整历史、主体性、自由意志与第一人称的完整思路。', 'A nine-act, twenty-part journey from bodily experience through rules, complete histories, selfhood, free will, and the first person.'), link: copy('进入沉浸式长篇', 'Enter the full visual essay')},
     subtitle: copy('理解如何发生，也追问为何值得。', 'Understand how things happen. Ask why they matter.'),
     intro: copy('这是我正在形成的一组思考原则：关于知识，关于人，也关于值得长期追问的问题。', 'These are principles I’m still developing: about knowledge, about people, and about questions worth staying with.'),
     sections: [
