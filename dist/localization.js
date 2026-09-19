@@ -135,7 +135,7 @@ function localize() {
     }
   });
   document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
-  document.querySelector('meta[name="description"]').content=language==='zh'?'Yuanshu Wang 的个人空间：统计学、Harvard Health Data Science，以及量化研究、机器学习与复杂系统。':'Yuanshu Wang — statistics, Health Data Science at Harvard, and explorations in quantitative research, machine learning, and complex systems.';
+  document.querySelector('meta[name="description"]').content=language==='zh'?'Yuanshu Wang 的个人空间：数学、统计与逻辑，AI、量化与哲学。阅读想法，也动手玩一个实验。':'Yuanshu Wang — mathematics, statistics, and logic. Exploring AI, quantitative research, and philosophy, with ideas you can read and experiments you can play.';
 }
 document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{
   language=button.dataset.language==='zh'?'zh':'en';
