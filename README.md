@@ -14,6 +14,8 @@ Static, responsive Bento portfolio in the selected green research style. Math, s
 - `dist/market-engine.js`: deterministic market simulation and causal online expert learner
 - `dist/contact.js`: owner-supplied social links, bilingual email, and WeChat copying
 - `dist/agent-market.js`: interactive online-learning lab with playback, deterministic replay, expert weights, and decision history
+- `dist/site-core.css` and `dist/site-core.js`: combined homepage assets that reduce first-visit request overhead
+- `scripts/build-home-bundles.mjs`: regenerates the combined homepage assets after editing their source CSS or JavaScript
 - `preview.mjs`: local-only static preview server on `127.0.0.1:4173`
 - `dist/philosophy.html`: independent bilingual, scroll-driven philosophical essay; nine acts preserve all twenty nodes of the owner's source record
 - `dist/philosophy-content.js`: paired editorial English translation and Chinese adaptation; experiences, conditional inferences, and metaphysical hypotheses remain distinct
@@ -21,7 +23,7 @@ Static, responsive Bento portfolio in the selected green research style. Math, s
 - `dist/assets/philosophy-*.webp`: original AI-generated illustrative scenes, not personal photographs; `thought-evolution-original-zh.pdf` is the supplied unmodified record
 - `dist/vendor/THREE-LICENSE.txt`: Three.js MIT license
 
-Run `node preview.mjs` to preview. Static output is authored directly in `dist`; no installation or build is required. Hosted configuration is in `.openai/hosting.json`.
+After changing the homepage CSS or JavaScript, run `node scripts/build-home-bundles.mjs`. Run `node preview.mjs` to preview. The site otherwise remains static and has no package installation step. Hosted configuration is in `.openai/hosting.json`.
 
 ## Design and content
 
