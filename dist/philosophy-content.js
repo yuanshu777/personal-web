@@ -2,6 +2,7 @@
 // The source's distinctions between experience, inference and hypothesis are intentional.
 const b=(en,zh)=>({en,zh});
 export const ui={
+  name:b('YUANSHU WANG','王元舒'),
   brand:b('A PHILOSOPHICAL NOTEBOOK','一份仍在演化的哲学笔记'),home:b('Home','主页'),readMode:b('Reading mode','纯阅读'),immersive:b('Immersive mode','沉浸模式'),contents:b('Contents','目录'),
   heroEyebrow:b('RULES / SELFHOOD / FREEDOM','规则 / 主体性 / 自由'),heroTitle:b('Within<br>the <em>world.</em>','身在世界，<br><em>追问世界。</em>'),heroQuestion:b('How can a part of the world begin to question the whole?','世界的一部分，如何开始追问整个世界？'),begin:b('Follow the thought ↓','沿着思路，向下探索 ↓'),heroNote:b('An evolving inquiry · 9 acts / 20 notes','一条演化中的思路 · 九幕 / 二十个节点'),heroCredit:b('Imagined scenes, drawn from a personal record','场景为依据个人记录创作的想象画面'),
   endingLabel:b('AN OPEN ENDING','开放的结尾'),endingTitle:b('The question<br>turns back on us.','问题，<br>回到了我们自身。'),endingCopy:b('The method remains: begin with experience, build a model, notice a contradiction, and revise—even the tools used to ask the question.','从经验出发，建立模型，发现矛盾，然后修正——包括用来提出问题的认知工具本身。'),original:b('Read the original Chinese record ↗','阅读完整中文原始记录 ↗'),portfolio:b('Return to the portfolio ↗','回到个人主页 ↗'),editorial:b('Adapted from my original twenty-part record. Scenes and spatial models illustrate the ideas; they are not empirical evidence. This remains a revisable philosophical framework.','根据我的二十节原始记录整理。场景与空间模型是帮助理解的视觉表达，不构成经验证据。这仍是一个允许修正的哲学框架。'),

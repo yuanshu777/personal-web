@@ -103,6 +103,8 @@ const chineseCopy = {
   '03 / LIMITS':'03 / 边界', 'IDEAS, MADE TANGIBLE':'让想法可以触碰', '00 / AN INTERACTIVE SKETCH':'00 / 互动小实验',
   '01 / AI PROJECT':'01 / AI 作品', '02 / AI PROJECT':'02 / AI 作品', '03 / OPEN QUESTION':'03 / 开放问题'
 };
+function chineseNames(value){return value.replace(/Harvard T\.H\. Chan School of Public Health/g,'哈佛大学陈曾熙公共卫生学院').replace(/University of Toronto/g,'多伦多大学').replace(/Health Data Science/g,'健康数据科学').replace(/YUANSHU WANG|Yuanshu Wang|YUANSHU|Yuanshu/g,'王元舒').replace(/HARVARD|Harvard/g,'哈佛大学').replace(/TORONTO/g,'多伦多大学').replace(/Toronto/g,'多伦多').replace(/多伦多 → 哈佛大学/g,'多伦多大学 → 哈佛大学').replace(/\bAI\b/g,'人工智能').replace(/\bQUANT\b/g,'量化').replace(/\bPHILOSOPHY\b/g,'哲学').replace(/\bAgents?\b/g,'智能体').replace(/(?<=[\p{Script=Han}]) +(?=[\p{Script=Han}])/gu,'');}
+Object.assign(chineseCopy,{'Math':'数学','Stat':'统计','Logic':'逻辑','AGENT MARKET':'智能体市场','Signal & Structure':'信号与结构'});
 function translateCopy(value) {
   // Arrow suffixes and numeric experiment labels are generated dynamically.
   const suffix=value.endsWith(' ↗')?' ↗':'';
@@ -110,7 +112,7 @@ function translateCopy(value) {
   let translated;
   if(language==='en') translated=Object.hasOwn(englishCopy,key)?englishCopy[key]:key;
   else translated=Object.hasOwn(chineseCopy,key)?chineseCopy[key]:key.replace(/^(\d+) \/ PERSONAL INDEX$/, '$1 / 个人索引').replace(/^OBSERVATIONS \/ /,'观察次数 / ');
-  return translated+suffix;
+  return (language==='zh'?chineseNames(translated):translated)+suffix;
 }
 const sourceText=new WeakMap();
 const sourceAttributes=new WeakMap();
@@ -135,7 +137,7 @@ function localize() {
     }
   });
   document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
-  document.querySelector('meta[name="description"]').content=language==='zh'?'Yuanshu Wang 的个人空间：数学、统计与逻辑，AI、量化与哲学。阅读想法，也动手玩一个实验。':'Yuanshu Wang — mathematics, statistics, and logic. Exploring AI, quantitative research, and philosophy, with ideas you can read and experiments you can play.';
+  document.querySelector('meta[name="description"]').content=language==='zh'?'王元舒的个人空间：数学、统计与逻辑，人工智能、量化与哲学。阅读想法，也动手玩一个实验。':'Yuanshu Wang — mathematics, statistics, and logic. Exploring AI, quantitative research, and philosophy, with ideas you can read and experiments you can play.';
 }
 document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{
   language=button.dataset.language==='zh'?'zh':'en';

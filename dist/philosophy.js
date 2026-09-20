@@ -23,8 +23,8 @@ let currentProgress=0,showingModel=false;
 
 function render(){
   document.documentElement.lang=language==='zh'?'zh-CN':'en';
-  document.title=language==='zh'?'身在世界，追问世界 — Yuanshu Wang':'Within the World — Yuanshu Wang';
-  document.querySelector('meta[name="description"]').content=language==='zh'?'Yuanshu Wang 关于规则、可能世界、主体性、自由意志与第一人称体验的二十节哲学记录。':'Yuanshu Wang’s twenty-part inquiry into rules, possible worlds, selfhood, freedom, and first-person experience.';
+  document.title=language==='zh'?'身在世界，追问世界 — 王元舒':'Within the World — Yuanshu Wang';
+  document.querySelector('meta[name="description"]').content=language==='zh'?'王元舒关于规则、可能世界、主体性、自由意志与第一人称体验的二十节哲学记录。':'Yuanshu Wang’s twenty-part inquiry into rules, possible worlds, selfhood, freedom, and first-person experience.';
   document.querySelectorAll('[data-ui]').forEach(el=>{const key=el.dataset.ui;if(key==='readMode')return;const value=t(ui[key]);if(['heroTitle','endingTitle'].includes(key))el.innerHTML=value;else el.textContent=value;});
   document.querySelectorAll('[data-lang]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.lang===language)));
   document.querySelector('.story-skip').textContent=t(ui.skip);
