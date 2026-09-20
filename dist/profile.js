@@ -4,7 +4,7 @@
 function copy(zh, en) { englishCopy[zh] = en; return zh; }
 
 const profile = {
-  bio: copy('我在 Harvard 攻读 Health Data Science 硕士，本科背景是统计学。现在，我把数学、统计与机器学习用于探索市场和复杂系统。', 'I study Health Data Science at Harvard, with a background in statistics. I explore markets and complex systems through mathematics, statistics, and machine learning.'),
+  bio: copy('我目前在 Harvard 攻读硕士，学习数理统计、数据科学、AI 与智能体。本科就读于 University of Toronto，学习统计学。', 'I’m a master’s student at Harvard, studying mathematical statistics, data science, AI, and intelligent agents. Previously, I studied statistics at the University of Toronto.'),
   identity: copy('统计背景 · 量化研究方向', 'Statistics background · Quant research focus'),
   questionFirst: copy('价格背后，', 'Behind every price,'),
   questionSecond: copy('是怎样的行为？', 'whose behavior?'),
@@ -31,7 +31,7 @@ const profilePages = {
     intro: copy('我是 Yuanshu Wang。我喜欢追问一个结果是怎样产生的，也喜欢把抽象的理解变成能够检验的模型。', 'I’m Yuanshu Wang. I’m drawn to how a result comes about—and to turning abstract understanding into models I can test.'),
     sections: [
       ['01 / EDUCATION', copy('多伦多 → Harvard', 'Toronto → Harvard'),
-        copy('本科就读于 University of Toronto，学习统计学；目前在 Harvard T.H. Chan School of Public Health 攻读 Health Data Science 硕士。', 'I studied statistics as an undergraduate at the University of Toronto and am pursuing a master’s in Health Data Science at Harvard T.H. Chan School of Public Health.'),
+        copy('我目前在 Harvard 攻读硕士，学习数理统计、数据科学、AI 与智能体。本科就读于 University of Toronto，学习统计学。', 'I’m a master’s student at Harvard, studying mathematical statistics, data science, AI, and intelligent agents. Previously, I studied statistics at the University of Toronto.'),
         copy('这条路径让我同时关心理论与应用：概率如何描述不确定性，统计如何支持判断，机器学习如何从复杂数据中学习。', 'That path brings theory and application together: probability describes uncertainty, statistics supports judgment, and machine learning learns from complex data.')],
       ['02 / EXPERIENCE', copy('在不同领域里建模', 'Modeling across domains'),
         copy('我的项目经历涉及多模态财报预测、横截面股票预测、风险平价、比特币期权策略与医学基础模型研究。', 'My project work spans multimodal financial-report prediction, cross-sectional equity prediction, risk parity, Bitcoin options strategies, and medical foundation-model research.'),
