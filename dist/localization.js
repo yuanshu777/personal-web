@@ -104,7 +104,7 @@ const chineseCopy = {
   '01 / AI PROJECT':'01 / AI 作品', '02 / AI PROJECT':'02 / AI 作品', '03 / OPEN QUESTION':'03 / 开放问题'
 };
 function chineseNames(value){return value.replace(/Harvard T\.H\. Chan School of Public Health/g,'哈佛大学陈曾熙公共卫生学院').replace(/University of Toronto/g,'多伦多大学').replace(/Health Data Science/g,'健康数据科学').replace(/YUANSHU WANG|Yuanshu Wang|YUANSHU|Yuanshu/g,'王元舒').replace(/HARVARD|Harvard/g,'哈佛大学').replace(/TORONTO/g,'多伦多大学').replace(/Toronto/g,'多伦多').replace(/多伦多 → 哈佛大学/g,'多伦多大学 → 哈佛大学').replace(/\bAI\b/g,'人工智能').replace(/\bQUANT\b/g,'量化').replace(/\bPHILOSOPHY\b/g,'哲学').replace(/\bAgents?\b/g,'智能体').replace(/(?<=[\p{Script=Han}]) +(?=[\p{Script=Han}])/gu,'');}
-Object.assign(chineseCopy,{'Math':'数学','Stat':'统计','Logic':'逻辑','AGENT MARKET':'智能体市场','Signal & Structure':'信号与结构'});
+Object.assign(chineseCopy,{'Math':'数学','Stat':'统计','Logic':'逻辑','AGENT MARKET':'智能体市场','Paths of Thought':'思想的路径'});
 function translateCopy(value) {
   // Arrow suffixes and numeric experiment labels are generated dynamically.
   const suffix=value.endsWith(' ↗')?' ↗':'';

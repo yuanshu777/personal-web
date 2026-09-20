@@ -1,4 +1,4 @@
-# Yuanshu Wang — Signal & Structure
+# Yuanshu Wang — Paths of Thought
 
 Static, responsive Bento portfolio in the selected green research style. Math, statistics, and logic anchor the identity; AI and quant are peer directions. English is the default; the header offers English / Chinese switching across every page. A visitor's explicit language choice is saved only on their device. Switching language preserves the current page and both experiments' progress. The personal content is a first editorial draft based on the owner's ChatGPT memories, read at their request. LinkedIn, GitHub, language-specific email addresses, and a copyable WeChat ID are connected. Full project write-ups are still pending.
 
